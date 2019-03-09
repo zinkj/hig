@@ -22,7 +22,7 @@
     "@hig/input": "^1.1.1",
     "@hig/theme-context": "^2.1.2",
     "emotion": "^10.0.0",
-    "downshift": "^3.2.0",
+    "downshift": "^3.2.7",
     "prop-types": "^15.7.1",
     "react-lifecycles-compat": "^3.0.4"
   },

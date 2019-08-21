@@ -97,6 +97,23 @@ function Example({ theme, name }) /* eslint-disable-line react/prop-types */ {
         <div
           style={{ height: theme.resolvedRoles["density.spacings.medium"] }}
         />
+
+        <InputHaloPresenter isError type="line">
+          <InputPresenter error value={`Line, Error - ${name}`} />
+        </InputHaloPresenter>
+        <div
+          style={{ height: theme.resolvedRoles["density.spacings.medium"] }}
+        />
+        <InputHaloPresenter isError type="box">
+          <InputPresenter error value={`Box, Error - ${name}`} />
+        </InputHaloPresenter>
+        <div
+          style={{ height: theme.resolvedRoles["density.spacings.medium"] }}
+        />
+        <InputPresenter error value={`Error - ${name}`} />
+        <div
+          style={{ height: theme.resolvedRoles["density.spacings.medium"] }}
+        />
       </div>
     </ThemeContext.Provider>
   );

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion/ContentPresenter renders collapsed content 1`] = `
+.emotion-1 {
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  height: 0;
+}
+
+.emotion-0 {
+  display: block;
+}
+
+<div
+  className="emotion-1"
+>
+  <div
+    className="emotion-0"
+  />
+</div>
+`;
+
+exports[`Accordion/ContentPresenter renders expanded content 1`] = `
+.emotion-1 {
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  height: 0;
+}
+
+.emotion-0 {
+  display: block;
+}
+
+<div
+  className="emotion-1"
+>
+  <div
+    className="emotion-0"
+  />
+</div>
+`;

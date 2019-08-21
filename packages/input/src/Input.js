@@ -33,6 +33,7 @@ function Input(props) {
     onMouseEnter: onMouseEnterProp,
     onMouseLeave: onMouseLeaveProp,
     disabled: disabledProp,
+    error: errorProp,
     stylesheet,
     tagName,
     variant,
@@ -56,6 +57,7 @@ function Input(props) {
       }) => (
         <Wrapper
           isDisabled={disabledProp}
+          isError={errorProp}
           hasFocus={hasFocus}
           hasHover={hasHover}
           stylesheet={stylesheet}
@@ -91,6 +93,10 @@ Input.propTypes = {
    * Prevents the user from interacting with the input
    */
   disabled: PropTypes.bool,
+  /**
+   * Displays visible indication of erroneous input
+   */
+  error: PropTypes.bool,
   /**
    * Fired when an element has lost focus
    */

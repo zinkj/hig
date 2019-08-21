@@ -13,6 +13,7 @@ function InputHaloPresenter(props) {
     hasFocus,
     hasHover,
     isDisabled,
+    isError,
     stylesheet: customStylesheet,
     variant,
     ...otherProps
@@ -22,7 +23,7 @@ function InputHaloPresenter(props) {
     <ThemeContext.Consumer>
       {({ resolvedRoles, metadata }) => {
         const styles = stylesheet(
-          { isDisabled, hasFocus, hasHover, variant },
+          { isDisabled, isError, hasFocus, hasHover, variant },
           resolvedRoles
         );
         const cssStyles = customStylesheet
@@ -61,6 +62,7 @@ InputHaloPresenter.propTypes = {
   hasFocus: PropTypes.bool,
   hasHover: PropTypes.bool,
   isDisabled: PropTypes.bool,
+  isError: PropTypes.bool,
   stylesheet: PropTypes.func,
   variant: PropTypes.oneOf(availableVariants)
 };

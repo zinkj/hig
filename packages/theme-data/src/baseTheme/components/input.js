@@ -53,6 +53,12 @@ export default {
       alpha: 0.35
     }
   },
+  "input.error.borderBottomColor": {
+    type: COLOR,
+    value: {
+      ref: "colorScheme.errorColor"
+    }
+  },
   "input.borderBottomWidth": {
     type: BORDER_WIDTH,
     value: {

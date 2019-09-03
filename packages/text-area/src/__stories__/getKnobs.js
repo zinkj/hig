@@ -8,6 +8,7 @@ const knobGroupIds = {
 
 const knobLabels = {
   disabled: "Disabled",
+  error: "Error",
   variant: "variant",
   onBlur: "onBlur",
   onChange: "onChange",
@@ -20,11 +21,12 @@ const variantOptions = {
 };
 
 export default function getKnobs(props) {
-  const { disabled, variant, onBlur, onChange, onFocus, ...otherProps } = props;
+  const { disabled, error, variant, onBlur, onChange, onFocus, ...otherProps } = props;
 
   return {
     ...otherProps,
     disabled: boolean(knobLabels.disabled, disabled, knobGroupIds.basic),
+    error: boolean(knobLabels.error, error, knobGroupIds.basic),
     variant: select(
       knobLabels.variant,
       variantOptions,

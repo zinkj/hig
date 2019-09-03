@@ -18,6 +18,7 @@ describe("Dropdown/presenters/WrapperPresenter", () => {
       desc: "renders with all props",
       props: {
         disabled: true,
+        error: true,
         children: <p key="p">hi</p>
       }
     }

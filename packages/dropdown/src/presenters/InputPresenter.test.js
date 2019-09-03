@@ -20,6 +20,7 @@ describe("Dropdown/presenters/InputPresenter", () => {
         id: "id",
         placeholder: "placeholder",
         disabled: true,
+        error: true,
         required: "this is required",
         onBlur: () => {},
         onFocus: () => {},

@@ -28,6 +28,10 @@ export default class Dropdown extends Component {
      */
     disabled: PropTypes.bool,
     /**
+    * Displays visible indication of erroneous input
+    */
+    error: PropTypes.bool,
+    /**
      * Used to format options into human readable strings
      *
      * Note that if both formatOption and renderOption are provided,
@@ -160,6 +164,7 @@ export default class Dropdown extends Component {
     const {
       placeholder,
       disabled,
+      error,
       required,
       onBlur,
       onFocus,
@@ -178,6 +183,7 @@ export default class Dropdown extends Component {
       id,
       placeholder,
       disabled,
+      error,
       isOpen,
       required,
       onBlur,

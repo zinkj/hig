@@ -9,6 +9,10 @@ const variantTypes = ["line", "box"];
 
 export default class TextArea extends Component {
   static propTypes = {
+    /**
+    * Displays visible indication of erroneous input
+    */
+    error: PropTypes.bool,
     onBlur: PropTypes.func,
     /**
      * Called after user changes the value of the field

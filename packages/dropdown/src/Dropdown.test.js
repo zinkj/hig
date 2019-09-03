@@ -151,6 +151,18 @@ describe("Dropdown", () => {
       props: {
         className: "custom-class-1 custom-class-2"
       }
+    },
+    {
+      desc: "renders with disabled prop",
+      props: {
+        disabled: true
+      }
+    },
+    {
+      desc: "renders with error prop",
+      props: {
+        error: true
+      }
     }
   ];
 
